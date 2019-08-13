@@ -1,7 +1,7 @@
 module.exports = {
   beforeReplacePath: "detail",
   detailPrefix: "/post",
-  githubToken: "e035574fe9fb60811a2951898d5c8f2c3c852b6d",
+  githubToken: "",
   githubOwnner: "ZWkang",
   githubProjectName: "Start-Learning-React",
   githubEndPoint: "https://api.github.com/graphql",

@@ -1,0 +1,26 @@
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &-messages {
+        flex: 1;
+
+        &__title {
+            margin-bottom: 0.4em;
+            font-size: 35px;
+            font-weight: 600;
+            line-height: 58px;
+            letter-spacing: -0.2px;
+        }
+    }
+
+    &-info {
+        flex: 1;
+        padding-left: 48px;
+
+        &__picture {
+            width: 100%;
+        }
+    }
+}

@@ -1,5 +1,7 @@
 import React from "react";
 import Head from "next/head";
+
+import { test } from "./test";
 import "./github-markdown-css.scss";
 import "./article.scss";
 
@@ -8,7 +10,6 @@ import AllIssueData from "../issue.json";
 class Article extends React.PureComponent {
   render() {
     const { id } = this.props;
-
     let pageJson = {};
     if (id) {
       pageJson = AllIssueData[id] || {};

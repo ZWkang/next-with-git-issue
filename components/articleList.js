@@ -5,9 +5,11 @@ import "./articlelist.scss";
 
 const ArticleList = props => {
   const jsonMapKeys = Object.keys(AllJsonData);
-  const ArticleListData = jsonMapKeys.map(key => {
-    return AllJsonData[key];
-  });
+  const ArticleListData = jsonMapKeys
+    .map(key => {
+      return AllJsonData[key];
+    })
+    .reverse();
   return (
     <div className="article-list">
       {ArticleListData.map(item => {

@@ -666,12 +666,12 @@ var singletonRouter = {
   }
 }; // Create public properties and methods of the router in the singletonRouter
 
-var urlPropertyFields = ['pathname', 'route', 'query', 'asPath'];
-var propertyFields = ['components'];
-var routerEvents = ['routeChangeStart', 'beforeHistoryChange', 'routeChangeComplete', 'routeChangeError', 'hashChangeStart', 'hashChangeComplete'];
-var coreMethodFields = ['push', 'replace', 'reload', 'back', 'prefetch', 'beforePopState']; // Events is a static property on the router, the router doesn't have to be initialized to use it
+var urlPropertyFields = ["pathname", "route", "query", "asPath"];
+var propertyFields = ["components"];
+var routerEvents = ["routeChangeStart", "beforeHistoryChange", "routeChangeComplete", "routeChangeError", "hashChangeStart", "hashChangeComplete"];
+var coreMethodFields = ["push", "replace", "reload", "back", "prefetch", "beforePopState"]; // Events is a static property on the router, the router doesn't have to be initialized to use it
 
-(0, _defineProperty["default"])(singletonRouter, 'events', {
+(0, _defineProperty["default"])(singletonRouter, "events", {
   get: function get() {
     return _router2["default"].events;
   }
@@ -690,8 +690,6 @@ propertyFields.concat(urlPropertyFields).forEach(function (field) {
 });
 coreMethodFields.forEach(function (field) {
   // We don't really know the types here, so we add them later instead
-  ;
-
   singletonRouter[field] = function () {
     var router = getRouter();
     return router[field].apply(router, arguments);
@@ -719,7 +717,7 @@ routerEvents.forEach(function (event) {
 
 function getRouter() {
   if (!singletonRouter.router) {
-    var message = 'No router instance found.\n' + 'You should only use "next/router" inside the client side of your app.\n';
+    var message = "No router instance found.\n" + 'You should only use "next/router" inside the client side of your app.\n';
     throw new Error(message);
   }
 
@@ -768,7 +766,7 @@ function makePublicRouterInstance(router) {
   for (var _i = 0, _urlPropertyFields = urlPropertyFields; _i < _urlPropertyFields.length; _i++) {
     var property = _urlPropertyFields[_i];
 
-    if (typeof _router[property] === 'object') {
+    if (typeof _router[property] === "object") {
       instance[property] = (0, _extends2["default"])({}, _router[property]); // makes sure query is not stateful
 
       continue;

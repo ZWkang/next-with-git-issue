@@ -23,7 +23,6 @@ const Footer = props => {
           {github ? (
             <a
               href={github}
-              // data-description={firstLetter(githubDescription)}
               target="_blank"
               noreferrer="true"
             >
@@ -32,7 +31,6 @@ const Footer = props => {
           ) : null}
           {link ? (
             <a
-              // data-description={firstLetter(linkDescription)}
               href={link}
               target="_blank"
               noreferrer="true"

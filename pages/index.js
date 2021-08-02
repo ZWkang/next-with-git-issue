@@ -1,14 +1,9 @@
-import React, { useEffect } from "react";
-import Layout from "../components/Layout";
-
-import Header from "../components/Header";
-// import ArticleList from "../components/articleList";
-import MarkupPosition from "../components/MarkupPosition";
-// import AllJsonData from "";
-// import Footer from "../components/Footer";
-import { RenderFooter } from "../components/util";
-
+import React from "react";
 import dynamic from "next/dynamic";
+import Layout from "../components/Layout";
+import Header from "../components/Header";
+import MarkupPosition from "../components/MarkupPosition";
+import { RenderFooter } from "../components/util";
 
 const ArticleList = dynamic(() => import("../components/articleList"));
 

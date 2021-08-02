@@ -19,7 +19,7 @@ const ArticleItem = props => {
 
         <p className="article-item__preview"> {preview}</p>
         <Link href={`${detailPrefix}/[id]`} as={link}>
-          <a className="article-item__link">阅读></a>
+          <a className="article-item__link">阅读</a>
         </Link>
       </section>
     </>

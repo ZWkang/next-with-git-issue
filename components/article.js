@@ -1,7 +1,5 @@
 import React from "react";
 import Head from "next/head";
-
-import { test } from "./test";
 import "./github-markdown-css.scss";
 import "./article.scss";
 
@@ -20,7 +18,6 @@ class Article extends React.PureComponent {
       <article className="article markdown-body">
         <Head>
           <title>{title}</title>
-          />
         </Head>
         <div className="article__wrapper">
           <h1 className="article__title">{title}</h1>

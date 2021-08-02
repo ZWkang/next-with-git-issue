@@ -3,13 +3,6 @@ import React from "react";
 import "./layout.scss";
 class Layout extends React.PureComponent {
   componentDidMount() {
-    if ("serviceWorker" in window.navigator) {
-      navigator.serviceWorker
-        .register("/static/sw.js")
-        .catch(err => console.error("Service worker registration failed", err));
-    } else {
-      console.log("Service worker not supported");
-    }
   }
   renderBody = () => {
     const { body } = this.props;

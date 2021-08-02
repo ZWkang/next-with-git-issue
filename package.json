@@ -12,8 +12,8 @@
     "data": "node ./lib/index.js",
     "renameFolder": "node ./lib/renameFolder.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "zwkang",
+  "license": "MIT",
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "graphql": "^14.4.2",

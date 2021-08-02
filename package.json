@@ -10,7 +10,7 @@
     "export": "next export",
     "start": "NODE_ENV=production node server.js",
     "data": "node ./lib/index.js",
-    "renameFloder": "node ./lib/renameFloder.js"
+    "renameFolder": "node ./lib/renameFolder.js"
   },
   "author": "",
   "license": "ISC",

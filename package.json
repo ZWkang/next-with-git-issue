@@ -1,6 +1,6 @@
 {
   "name": "next-with-git-issue",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "it is a simple case use next.js build issue blog",
   "main": "index.js",
   "scripts": {
